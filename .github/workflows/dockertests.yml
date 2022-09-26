@@ -16,7 +16,7 @@ jobs:
         run: docker run -d --name telnyxtests local 
 
       - name: Get reports from container
-        run: docker cp telnyxtests:/usr/app/tests/allure-report ${pwd}
+        run: docker cp telnyxtests:/usr/app/tests/allure-report ./
 
       - name: Upload Results
         uses: actions/upload-artifact@v1
