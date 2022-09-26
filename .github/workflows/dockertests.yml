@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create docker image
-        run: docker build -t local .
+        run: docker build -t local 
 
       - name: Run container
         run: docker run -d --name telnyxtests local 

@@ -1,0 +1,12 @@
+name: WDIO tests w/ docker
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs: 
+  local-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create docker image
+        run: ls . 
