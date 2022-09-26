@@ -20,8 +20,8 @@ Tests for telnyx.com implemented by webdriverIO.
 |----------------|:---------:|
 | npm run suite:voice-api | Run tests for [Voice API](https://telnyx.com/products/voice-api) page |
 | npm run suite:au-sip | Run tests for [AU SIP Trunking](https://telnyx.com/products/voice-api) page |
-| npm run suite:use-case | Run tests for **use-case section** on three pages: -[SMS API](https://telnyx.com/products/sms-api)    -[SIP Trunking](https://telnyx.com/products/sip-trunks)    -[Voice API](https://telnyx.com/products/voice-api) |
-| npm run suite:faq | Run test suite for **faq section** on next pages: -[SMS API](https://telnyx.com/products/sms-api)    -[SIP Trunking](https://telnyx.com/products/sip-trunks)    -[Voice API](https://telnyx.com/products/voice-api)     -[AU SIP Trunking](https://telnyx.com/products/voice-api) |
-| npm run suite:sip | Run tests for -[SIP Trunking](https://telnyx.com/products/sip-trunks) page |
+| npm run suite:use-case | Run tests for **use-case section** on three pages: [SMS API](https://telnyx.com/products/sms-api)    [SIP Trunking](https://telnyx.com/products/sip-trunks)    [Voice API](https://telnyx.com/products/voice-api) |
+| npm run suite:faq | Run test suite for **faq section** on next pages: -[SMS API](https://telnyx.com/products/sms-api)    [SIP Trunking](https://telnyx.com/products/sip-trunks)    [Voice API](https://telnyx.com/products/voice-api)     [AU SIP Trunking](https://telnyx.com/products/voice-api) |
+| npm run suite:sip | Run tests for [SIP Trunking](https://telnyx.com/products/sip-trunks) page |
 | npm run spec:use-case | Run spec with **use-case section** tests |
 | npm run spec:faq-links | Run spec with **faq section** tests |
