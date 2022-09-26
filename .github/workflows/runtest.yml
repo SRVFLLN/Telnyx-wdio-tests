@@ -8,21 +8,21 @@ jobs:
   wdio-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18.8.0' 
+          node-version: '16.x' 
       - run: npm ci
       - name: Run Tests
         run: npm run test:all
       - name: Upload Results
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: allure-results
           path: ./allure-results                  
       - name: Publishing Allure artifact to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: allure-report
