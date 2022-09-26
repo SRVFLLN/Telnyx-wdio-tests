@@ -16,21 +16,21 @@ jobs:
         run: docker run -d --name telnyxtests local 
 
       - name: Get reports from container
-        run: docker cp telnyxtests:/usr/app/tests/allure-report ./
+        run: docker cp telnyxtests:/usr/app/tests/reports ./
 
       - name: Upload Results
         uses: actions/upload-artifact@v1
         if: always()
         with:
           name: allure-results
-          path: ./allure-results
+          path: ./reports
 
       - name: Publishing Allure artifact to Github Actions
         uses: actions/upload-artifact@v2
         if: always()
         with:
-          name: allure-report
-          path: allure-report      
+          name: reports
+          path: ./reports      
             
       - name: Push to another branch
         if: always()
@@ -38,6 +38,6 @@ jobs:
         env:
           REPO: self
           BRANCH: docker_reports # The branch name where you want to push the assets
-          FOLDER: allure-report # The directory where your assets are generated
+          FOLDER: ./reports # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Reports added" # The commit message 
