@@ -1,0 +1,4 @@
+[{"from":"local", "make":316500, "receive":400000, "programm":true, "cost":4795},
+{"from":"local", "make":153000, "receive":90000, "programm":false, "cost":1316},
+{"from":"tollfree", "make":200000, "receive":234500, "programm":true, "cost":4132},
+{"from":"tollfree", "make":157000, "receive":129000, "programm":false, "cost":1983}]

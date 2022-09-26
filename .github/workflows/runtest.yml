@@ -1,0 +1,38 @@
+name: WDIO tests
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18.8.0' 
+      - run: npm ci
+      - name: Run Tests
+        run: npm run test:all
+      - name: Upload Results
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: allure-results
+          path: ./allure-results                  
+      - name: Publishing Allure artifact to Github Actions
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: allure-report
+          path: allure-report        
+      - name: Push to another branch
+        if: always()
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: reports # The branch name where you want to push the assets
+          FOLDER: allure-report # The directory where your assets are generated
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          MESSAGE: "Reports added" # The commit message 
