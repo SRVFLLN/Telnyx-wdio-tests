@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//h1/span[text()='Voice API']"
-}

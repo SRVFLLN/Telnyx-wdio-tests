@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@role='tabpanel' and @aria-hidden='false']//img\"}\n  (Session info: headless chrome=105.0.5195.125)",
-  "stacktrace": "#0 0x55df2dcb6693 <unknown>\n#1 0x55df2daafb0a <unknown>\n#2 0x55df2dae85f7 <unknown>\n#3 0x55df2dae87c1 <unknown>\n#4 0x55df2db1b804 <unknown>\n#5 0x55df2db0594d <unknown>\n#6 0x55df2db194b0 <unknown>\n#7 0x55df2db05743 <unknown>\n#8 0x55df2dadb533 <unknown>\n#9 0x55df2dadc715 <unknown>\n#10 0x55df2dd067bd <unknown>\n#11 0x55df2dd09bf9 <unknown>\n#12 0x55df2dcebf2e <unknown>\n#13 0x55df2dd0a9b3 <unknown>\n#14 0x55df2dcdfe4f <unknown>\n#15 0x55df2dd29ea8 <unknown>\n#16 0x55df2dd2a052 <unknown>\n#17 0x55df2dd4471f <unknown>\n#18 0x7effdbb73609 <unknown>\n"
-}
