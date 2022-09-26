@@ -8,6 +8,7 @@ jobs:
   docker-wdio-test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Create docker image
         run: docker build -t local ./
 
