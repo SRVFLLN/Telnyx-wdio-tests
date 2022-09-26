@@ -5,6 +5,7 @@ RUN apk update
 RUN apk add git
 RUN apk add chromium
 RUN apk add firefox
+RUN add openjdk11
 RUN git clone https://github.com/SRVFLLN/Telnyx-wdio-tests /usr/app/tests
 RUN cd /usr/app/tests
 RUN npm ci
