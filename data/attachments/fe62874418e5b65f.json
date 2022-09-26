@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "[data-faq-answer='4'] p a:nth-child(1)"
-}

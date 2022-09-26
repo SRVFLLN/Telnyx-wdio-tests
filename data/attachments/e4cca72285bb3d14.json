@@ -1,8 +1,0 @@
-{
-  "script": "return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)",
-  "args": [
-    "https://support.telnyx.com/en/articles/1310359-acceptable-use-policy-for-messaging",
-    "newWindow",
-    ""
-  ]
-}
