@@ -26,8 +26,8 @@
         "spec:faq-links": "wdio run wdio.firefox.js --spec ./test/specs/faq-links.spec.js",
         "tests:chrome": "wdio run wdio.chrome.js",
         "tests:firefox": "wdio run wdio.firefox.js",
-        "allure:generate":"npx allure generate --clean",
-        "allure:open": "npx allure open",
+        "allure:generate":"npx allure generate --clean -o ./reports",
+        "allure:open": "npx allure open ./reports",
         "test:all":"(npm run tests:chrome || true) && (npm run tests:firefox || true) && npm run allure:generate"
     }
 }

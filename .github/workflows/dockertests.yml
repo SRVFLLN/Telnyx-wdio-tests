@@ -5,7 +5,7 @@ on:
       - 'master'
 
 jobs: 
-  local-server:
+  docker-wdio-test:
     runs-on: ubuntu-latest
     steps:
       - name: Create docker image
