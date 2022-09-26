@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//h2[contains(text(),'Effortless')]/ancestor::div/following-sibling::div//ul/li//a"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[text()='Telnyx']/following-sibling::div//span[@class]"
+}

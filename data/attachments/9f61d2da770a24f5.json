@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@aria-hidden='false']//img[not(ancestor::header) and contains(@src,'Net')]"
+}
