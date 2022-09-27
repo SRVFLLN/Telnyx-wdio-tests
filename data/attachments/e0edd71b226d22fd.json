@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div[@role='tabpanel' and @aria-hidden='false']//img"
-}
