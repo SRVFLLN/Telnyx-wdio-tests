@@ -1,6 +1,0 @@
-{
-  "script": "return (yLoc => {\n      window.scrollTo(0, yLoc - 678);\n    }).apply(null, arguments)",
-  "args": [
-    6656.049987792969
-  ]
-}
