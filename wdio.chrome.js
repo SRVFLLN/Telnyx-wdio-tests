@@ -136,7 +136,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver',{
-        path: ()=>{return platform.os.family=='Linux'? '/usr/lib/chromium' : null}
+        path: platform.os.family=='Linux'? '/usr/lib/chromium' : null
     }],
     
     // Framework you want to run your specs with.
