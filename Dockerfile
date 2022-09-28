@@ -32,10 +32,10 @@ RUN apk update && apk add --no-cache bash \
         zlib-dev \
         chromium \
         chromium-chromedriver
-RUN CHROMEDRIVER_FILEPATH='/usr/bin/chromedriver'
 RUN apk add firefox
 RUN apk add openjdk11
 RUN git clone https://github.com/SRVFLLN/Telnyx-wdio-tests /usr/app/tests
 RUN cd /usr/app/tests
 RUN npm ci
+RUN CHROMEDRIVER_FILEPATH='/usr/bin/chromedriver'
 RUN npm run test:all

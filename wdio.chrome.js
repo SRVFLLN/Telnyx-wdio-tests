@@ -138,7 +138,8 @@ exports.config = {
     services: [['chromedriver',{
         path:'/usr/lib/chromium',
         chromedriverCustomPath: '/usr/bin/chromedriver',
-        binary:'/usr/lib/chromium'
+        binary:'/usr/lib/chromium',
+        args: ['--url-base=/usr/lib/chromium']
     }]],
     
     // Framework you want to run your specs with.
