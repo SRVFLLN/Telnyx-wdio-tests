@@ -4,7 +4,7 @@ WORKDIR /usr/app/tests
 RUN apk update
 RUN apk add git
 RUN apk add chromium
-RUN pk update && apk add --no-cache bash \
+RUN apk update && apk add --no-cache bash \
         alsa-lib \
         at-spi2-atk \
         atk \
