@@ -2,7 +2,7 @@ name: WDIO tests w/ docker
 on:
   push:
     branches:
-      - 'master'
+      - 'fixes'
 
 jobs: 
   docker-wdio-test:
@@ -37,7 +37,7 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
-          BRANCH: docker_reports # The branch name where you want to push the assets
+          BRANCH: fixes_docker_reports # The branch name where you want to push the assets
           FOLDER: ./reports # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Reports added" # The commit message 
