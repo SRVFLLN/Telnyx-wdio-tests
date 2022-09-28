@@ -137,7 +137,8 @@ exports.config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [['chromedriver',{
         path:'/usr/lib/chromium',
-        chromedriverCustomPath: '/usr/bin/chromedriver'
+        chromedriverCustomPath: '/usr/bin/chromedriver',
+        binary:'/usr/lib/chromium'
     }]],
     
     // Framework you want to run your specs with.
