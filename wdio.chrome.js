@@ -81,6 +81,16 @@ exports.config = {
         browserName: 'chrome',
         'goog:chromeOptions': {
             args: ['--headless','--disable-gpu','--window-size=1920,1080'],
+            prefs:{
+                path:'/usr/lib/chromium',
+                chromedriverCustomPath: '/usr/bin/chromedriver',
+                binary:'/usr/lib/chromium',
+                args: ['--url-base=/usr/lib/chromium'],
+                'path':'/usr/lib/chromium',
+                'chromedriverCustomPath': '/usr/bin/chromedriver',
+                'binary':'/usr/lib/chromium',
+                'args': ['--url-base=/usr/lib/chromium']
+            }
         },
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
