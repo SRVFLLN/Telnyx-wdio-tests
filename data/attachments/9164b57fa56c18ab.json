@@ -1,0 +1,12 @@
+{
+  "script": "return (function (elem, options) {\n        elem.scrollIntoView(options);\n    }).apply(null, arguments)",
+  "args": [
+    {
+      "element-6066-11e4-a52e-4f735466cecf": "d2a05a9a-ca80-4750-bb04-f7154b8dee2c",
+      "ELEMENT": "d2a05a9a-ca80-4750-bb04-f7154b8dee2c"
+    },
+    {
+      "block": "center"
+    }
+  ]
+}
