@@ -27,9 +27,11 @@
         "spec:use-case": "wdio run wdio.firefox.js --spec ./test/specs/use-case-links.spec.js",
         "spec:faq-links": "wdio run wdio.firefox.js --spec ./test/specs/faq-links.spec.js",
         "tests:chrome": "wdio run wdio.chrome.js",
+        "tests:chrome:docker":"wdio run wdio.chrome_docker.js",
         "tests:firefox": "wdio run wdio.firefox.js",
         "allure:generate": "npx allure generate --clean -o ./reports",
         "allure:open": "npx allure open ./reports",
-        "test:all": "(npm run tests:chrome || true) && (npm run tests:firefox || true) && npm run allure:generate"
+        "test:all": "(npm run tests:chrome || true) && (npm run tests:firefox || true) && npm run allure:generate",
+        "test:all:docker":"(npm run tests:chrome:docker || true) && (npm run tests:firefox || true) && npm run allure:generate"
     }
 }
