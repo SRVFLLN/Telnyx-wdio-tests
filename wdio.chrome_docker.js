@@ -81,7 +81,7 @@ exports.config = {
         //
         browserName: 'chrome',
         'goog:chromeOptions': {
-            args: ["--no-sandbox"],
+            args: ["--no-sandbox", "--disable-dev-shm-usage","--disable-extensions"],
             binary: process.env.CHROME_BIN,
         },
         acceptInsecureCerts: true
